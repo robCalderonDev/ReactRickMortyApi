@@ -1,23 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
+import { CharacterCard } from './CharacterCard';
+import { GridCards } from './GridCards';
+
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App bg-slate-50 ">
+      <div className='flex justify-center'>
+        <h1 className='text-4xl border-slate-600 mt-2  text-neutral-600'>Rick and morty API</h1>
+      </div>
+
+      <GridCards />
+
+
     </div>
   );
 }
