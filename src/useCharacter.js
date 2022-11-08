@@ -6,11 +6,6 @@ export const useCharacter = (pagina) => {
     const [loanding, setLoanding] = useState(true)
     const [error, setError] = useState(null)
 
-
-
-
-    console.log(characters, "esta es la pagina")
-
     const fetchCharacters = async () => {
 
         try {
